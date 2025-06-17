@@ -1,0 +1,61 @@
+/* ===========================
+   Reset e Estilos Globais
+   =========================== */
+body {
+    background-color: #efefef;
+}
+
+/* ===========================
+   Estrutura da Página
+   =========================== */
+#main-header,
+#main-footer {
+    background-color: #17882c;
+    color: whitesmoke;
+}
+
+.ca-block {
+    background-color: #dddddd;
+}
+
+.border {
+    border: 1px solid #b0b0b0 !important;
+}
+
+/* ===========================
+   Tipografia e Links
+   =========================== */
+a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+a:hover {
+    color: whitesmoke;
+}
+
+/* ===========================
+   Formulários
+   =========================== */
+.form-control:focus {
+    background-color: #d8ffd8;
+}
+
+.asterisco-required {
+    color: red;
+}
+
+/* ===========================
+   Efeitos Visuais
+   =========================== */
+.zoom {
+    transition: all .3s;
+}
+
+/* Efeito: Gira levemente ao passar o mouse */
+.zoom:hover {
+    transform: scale(1.3);
+    transform-origin: left;
+}
+
+/* Falta tema dark... */

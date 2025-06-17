@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário Recebido</title>
+</head>
+<body>
+    <h2>Dados Recebidos:</h2>
+    <div id="dados_recebidos">
+    </div>
+    <script>
+        // Obtém os parâmetros da URL
+        const params = new URLSearchParams(window.location.search);
+
+        // Cria uma lista para exibir os dados
+        let html = "<ul>";
+        for (const [key, value] of params.entries()) {
+            html += `<li><strong>${key}:</strong> ${decodeURIComponent(value)}</li>`;
+        }
+        html += "</ul>";
+
+        // Exibe os dados recebidos no div
+        document.getElementById("dados_recebidos").innerHTML = html;
+    </script>
+</body>
+</html>
